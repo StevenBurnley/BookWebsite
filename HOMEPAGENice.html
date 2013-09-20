@@ -5,6 +5,16 @@
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
+    	<script>
+		function goToDropDownResults()
+		{
+			var g = document.getElementById("gradePicker").value;
+			var s = document.getElementById("subjectPicker").value;
+			var t = g + "/" + s;
+			window.location.replace(t);
+		}
+		
+		</script>
 	</head>
 	<body>
 		
@@ -25,7 +35,7 @@
 			Select a grade</p>
 		<p>
 			<select name="Grade" size="1" id="gradePicker">
-			<option value="http://www.google.com">5th</option>
+			<option value="5">5th</option>
 			<option value="6">6th</option>
 			<option value="7">7th</option>
 			<option value="8">8th</option>
@@ -36,10 +46,15 @@
 		<p>
 			Select a Subject</p>
 		<p>
-			<select name="Subject" size="1"><option value="1">English</option><option value="2">Math</option><option value="3">History</option><option value="4">Science</option></select></p>
+			<select name="subjectPicker" size="1" id="subjectPicker">
+			<option value="English">English</option>
+			<option value="Math">Math</option>
+			<option value="History">History</option>
+			<option value="Science">Science</option>
+			</select></p>
 
 		<p>
-			<a href="PhysicsBook.html" class="btn btn-primary btn-large">Find My Book</a>
+			<input type="button" onclick="goToDropDownResults()" type="button"  class="btn btn-primary btn-large" value="Find My Book">
 		<p>
 			&nbsp;</p>
 		<p>
