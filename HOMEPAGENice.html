@@ -14,10 +14,10 @@
     	<script>
 		function goToDropDownResults()
 		{
-			var g = document.getElementById("gradePicker").value;
-			var s = document.getElementById("subjectPicker").value;
-			var t = g + "/" + s;
-			window.location.replace(t);
+			var gradeSelected = document.getElementById("gradePicker").value;
+			var subjectSelected = document.getElementById("subjectPicker").value;
+			var gradeNSubject = gradeSelected + "/" + subjectSelected;
+			window.location.replace(gradeNSubject);
 		}
 		
 		</script>
@@ -47,7 +47,7 @@
 			<option value="8">8th</option>
 			<option value="9">Freshman</option>
 			<option value="10">Sophomore</option>
-			<option value="11">Junior</option>
+			<option value="11" selected="selected">Junior</option>
 			<option value="12">Senior</option></select></p>
 		<p>
 			Select a Subject</p>
