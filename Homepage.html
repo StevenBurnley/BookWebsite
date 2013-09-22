@@ -5,22 +5,22 @@
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
+    	<!-- Header CSS styling -->
     	<style>
     		body	{
+    			/* The Nice Blue Background*/
     			background-color:#0baeea;
-    		}
-    	</style>
+    		}</style>
 
+    	<!-- Handle redirection to folder by dropdown selection -->
     	<script>
-		function goToDropDownResults()
-		{
-			var gradeSelected = document.getElementById("gradePicker").value;
-			var subjectSelected = document.getElementById("subjectPicker").value;
-			var gradeNSubject = gradeSelected + "/" + subjectSelected;
-			window.location.replace(gradeNSubject);
-		}
-		
-		</script>
+			function goToDropDownResults()
+			{
+				var gradeSelected = document.getElementById("gradePicker").value;
+				var subjectSelected = document.getElementById("subjectPicker").value;
+				var gradeNSubject = gradeSelected + "/" + subjectSelected;
+				window.location.replace(gradeNSubject);
+			}</script>
 	</head>
 	<body>
 		
@@ -32,14 +32,15 @@
 		<!-- visual stuff /-->
 		<div style="text-align:center;">
 		<h1>
+			<!-- The Title -->
 			<span style="font-family:comic sans ms,cursive;">Academy Books Site</span></h1>
-			
-		
+
 		<p>
 			If you forgot your book at school, or are straight up too lazy, then this is the place.</p>
 		<p>
 			Select a grade</p>
 		<p>
+			<!-- The Grade Selection Dropdown -->
 			<select name="Grade" size="1" id="gradePicker">
 				<option value="5">5th</option>
 				<option value="6">6th</option>
@@ -52,6 +53,7 @@
 		<p>
 			Select a Subject</p>
 		<p>
+			<!-- The Subject Selection Dropdown -->
 			<select name="subjectPicker" size="1" id="subjectPicker">
 				<option value="English">English</option>
 				<option value="Math">Math</option>
@@ -60,16 +62,23 @@
 			</select></p>
 
 		<p>
-			<input type="button" onclick="goToDropDownResults()" type="button"  class="btn btn-primary btn-large" value="Find My Book"></p>
+			<!-- Button that runs dropdown redirection script -->
+			<input type="button" onclick="goToDropDownResults()" type="button"  class="btn btn-primary btn-large" value="Find My Book">
+			</p>
+
 		<p>
+			<!-- Absolutely no idea what this is -->
 			&nbsp;</p>
+		
 		<p>
 			Or..</p>
+		
 		<p>
+			<!-- Link to All Books page that doesnt exist yet -->
 			<a href="http://www.thejrexperiment.com/wp-content/uploads/2013/04/poop-1024x875.jpg" class="btn btn-success btn-large">View All Books</a></p>
 
 		<p>
-			<a href="OtherReferences.html">Other References</a>
-		</p>
+			<!-- Hyperlink to other references page -->
+			<a href="OtherReferences.html">Other References</a></p>
 	</body>
 </html>
