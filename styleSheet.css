@@ -1,0 +1,16 @@
+body, body	{
+	background-color:#00b4f5;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+}
+p{
+	color: black;
+}

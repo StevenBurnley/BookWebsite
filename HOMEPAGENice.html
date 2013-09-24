@@ -5,14 +5,13 @@
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    	<style>
-    		body	{
-    			background-color:#69b6e2;
-    		}
-    	</style>
+    	<link rel="stylesheet" type="text/css" href="styleSheet.css" />
 
     	<script>
+		
+
 		function goToDropDownResults()
+		<!-- This grabs the choices and appends them into a string for the url -->
 		{
 			var g = document.getElementById("gradePicker").value;
 			var s = document.getElementById("subjectPicker").value;
@@ -22,6 +21,7 @@
 		
 		</script>
 	</head>
+	
 	<body>
 		
 
@@ -31,14 +31,20 @@
 
 		<!-- visual stuff /-->
 		<div style="text-align:center;">
+
 		<h1>
-			<span style="font-family:comic sans ms,cursive;">Academy Books Site</span></h1>
+			<span style="font-family:comic sans ms,cursive;">Academy Books Site</span>
+		</h1>
 			
 		
 		<p>
-			If you forgot your book at school, or are straight up too lazy, then this is the place.</p>
+			If you forgot your book at school, or are straight up too lazy, then this is the place.
+		</p>
+
 		<p>
-			Select a grade</p>
+			Select a grade
+		</p>
+
 		<p>
 			<select name="Grade" size="1" id="gradePicker">
 			<option value="5">5th</option>
@@ -50,7 +56,9 @@
 			<option value="11">Junior</option>
 			<option value="12">Senior</option></select></p>
 		<p>
-			Select a Subject</p>
+			Select a Subject
+		</p>
+
 		<p>
 			<select name="subjectPicker" size="1" id="subjectPicker">
 			<option value="English">English</option>
@@ -62,14 +70,20 @@
 		<p>
 			<input type="button" onclick="goToDropDownResults()" type="button"  class="btn btn-primary btn-large" value="Find My Book">
 		<p>
-			&nbsp;</p>
+			&nbsp;
+		</p>
+
 		<p>
-			Or..</p>
+			Or..
+		</p>
+
 		<p>
 			<a href="http://www.thejrexperiment.com/wp-content/uploads/2013/04/poop-1024x875.jpg" class="btn btn-success btn-large">View All Books</a></p>
 
-		<p>
-			
-		</p>
+		<div class =".footer">
+			<p>
+				Test?
+			</p>
+		</div>
 	</body>
 </html>
