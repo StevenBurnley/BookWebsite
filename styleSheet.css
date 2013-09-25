@@ -1,12 +1,15 @@
 body{
-	background-color:#00b4f5;
 	height: 100%;
+	background-color: #00b4f5;
 }
 p{
-	color: black;
 	font-family: "Comic Sans MS";
 }
 H1{
-	color: #000;
+	color: black;
 	font-family: "Comic Sans MS";
+}
+textalign{
+	/* This goes over the whole body */
+	text-align: center;
 }
